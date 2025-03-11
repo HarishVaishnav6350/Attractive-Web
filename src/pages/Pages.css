@@ -1,0 +1,200 @@
+/* contact */
+.cont{
+    padding: 20px;
+    display: flexbox;
+    height: 12;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: #d4bbbb;
+  margin: 10px 20px;
+
+  }
+  .pere{
+    padding :20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+  }
+  .contact-card{
+    padding: 50px;
+    display: inline-block;
+    height: 15;
+    background-color: rgb(161, 126, 27);
+    border-width: 10px;
+    border-radius: 15px;
+  }
+  .lable{
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    justify-content: left;
+    margin: 10px;
+  }
+  /* form */
+.form-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  border: 2px solid #eee;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.div {
+  display: flex;
+  align-items: center;  
+  margin-bottom: 15px; 
+  margin: 20px 40px;
+}
+
+.form5 {
+  font-size: 16px;
+  color: #555;
+  width: 150px;  
+  margin-right: 20px; 
+  font-weight: 500;
+  display: inline-flex;
+}
+
+.fomInput {
+  flex-grow: 1;  
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; 
+}
+/* profile */
+.profile-container {
+  padding: 20px;
+  background-color: #96b159;
+  font-family: Arial, sans-serif;
+  margin: 10px 20px;
+  border-radius: 15px;
+
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two columns */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.profile-entry {
+  position: relative;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+text-align: left;
+}
+
+.profile-entry:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-entry h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.profile-entry p {
+  margin: 8px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+.profile-entry p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-entry .profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 10px;
+}
+
+.profile-entry .profile-details p {
+  margin-bottom: 10px;
+}
+
+.no-profile {
+  font-size: 1.2em;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+.delete-btn {
+ position: absolute;
+ right: 8px;
+ top: 8px;
+  
+}
+ .reset-btn {
+  margin-top: 20px;
+  padding: 10px 100px;
+  background-color: rgb(252, 50, 50);
+ }
+ 
+ .User-Avtar  {
+  position: absolute;  
+  top: 450px;  
+  left: 40px;  
+  width: 200px;  
+  height: 200px;  
+  border-radius: 15%; 
+  object-fit: cover;  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+.user{ 
+  position :absolute;
+  top :610px;
+  left: 260px;
+}
+.User-Cover{
+ width: 97%;
+ height: 50%;
+ border-radius: 15px;
+ margin: 2px 20px;
+} 
+.entrys{
+  display: flex;
+position: absolute;
+text-align: center;
+  background-color: #96b159;
+  top :90vh;
+  padding:150px;
+  margin:20px 20px;
+  border-radius: 15px;
+}
+.Edit{
+  position: absolute;
+top: 580px;
+right: 30px;
+}
+.add-info{
+  display: flex;
+  position: absolute;
+  top: 280PX;
+  left: 80px;
+}
+.name{
+  display: flex;
+  position: absolute;
+  top: 10px;
+}
+

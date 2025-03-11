@@ -1,38 +1,132 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
   text-align: center;
 }
+ 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  position: relative;
+  background: #282c34;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin: 10px 20px;
+  
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 1200px;
+  margin: 10px 20px;
+  padding: 0 20px;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: red;
+}
+
+.brand-name {
   color: white;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: yellow;
+}
+
+.page-container {
+  padding: 50px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #282c34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #444b58;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
   }
 }
+.brand-name{
+  text-decoration: none;
+}
+ .footer {
+  background-color: rgb(230, 230, 142);
+  margin: 10px 20px;
+  border-radius: 15px;
+
+ }
+ .footer-container {
+  justify-content: space-between;
+  align-items: center;
+margin: 80px;  
+  padding: 20px;  }
+  
