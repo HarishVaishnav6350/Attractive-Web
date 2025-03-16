@@ -101,8 +101,9 @@ text-align: left;
 }
 
 .profile-entry:hover {
-  transform: scale(1.02);
+  transform: scale(1.09);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3 sec ease-in-out
 }
 
 .profile-entry h3 {
@@ -122,11 +123,7 @@ text-align: left;
   color: #333;
 }
 
-.profile-entry .profile-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;  
-  gap: 10px;
-}
+ 
 
 .profile-entry .profile-details p {
   margin-bottom: 10px;
@@ -197,4 +194,27 @@ right: 30px;
   position: absolute;
   top: 10px;
 }
-
+.news-grid{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  background-color: #96b159;
+  border-radius: 10px;
+}
+.News{
+  position: relative;
+  background-color: #fcfbfa;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.2s ease;
+  text-align: left;
+  margin: 20px;
+}
+.News:hover{
+  transform: scale(1.09);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.Imgr{
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+}

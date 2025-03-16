@@ -206,7 +206,6 @@ return (
             <div key={index} className='detail-user' >
               {entry.coverPhoto && <img src={entry.coverPhoto} alt="User-Cover" className='User-Cover'  /> }
              <div className='entrys'>
-              <p className='name'><strong>Name:</strong> {entry.name}</p>
               <p className='e-mail'><strong>Email:</strong> {entry.email}</p>
               <p className='dob'><strong>Date of Birth:</strong> {entry.dob}</p>
               <p className='phone'><strong>Phone:</strong> {entry.phone}</p>
