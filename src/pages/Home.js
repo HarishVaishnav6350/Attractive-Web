@@ -4,13 +4,23 @@
 
   const [data , setData]= useState(null)
   const [loading , setLoading] =useState(true)
+  const [selectCatogary , setSelectedCatogry] =useState('technology')
+  const catogeries =[
+    {name:'Technology', value:'technology'},
+    {name:'Business', value:'business'},
+    {name:'Entertainment', value:'entertainment'},
+    {name:"Health", value:'health'},
+    {name:"Science", value:'science'},
+    {name:"Sports", value:'sports'},
+    
+  ]
 
   useEffect(()=>{
 const fetchData = async ()=>{
- try {const responce = await fetch("https://newsapi.org/v2/everything?q=apple&from=2025-03-14&to=2025-03-14&sortBy=popularity&apiKey=0465a35ab3e441bab8157f5c63ed6d82")
-   if(!fetch){
-    throw new Error('no data available')
-   }
+ try {const responce = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${selectCatogary}&apiKey=0465a35ab3e441bab8157f5c63ed6d82`)
+  if(!responce.ok){
+    throw new Error("No data available")
+  }
   const result = await responce.json()
 
   setData(result)}
@@ -21,16 +31,33 @@ const fetchData = async ()=>{
 finally{
   setLoading(false)
 }
-if(loading){
- return <h1>loading</h1>
-}
+
 };
 
 fetchData()
-  },[])
+  },[selectCatogary])
+  
+
+  const HandleClick =(category)=>{
+    setLoading(true);
+    setSelectedCatogry(category);
+    setLoading(false);
+
+  }
+  if(loading){
+    return <h1 >loading...</h1>
+   }
 return(
   <div style={{backgroundColor:'beige' ,margin:"10px 20px"}} >
-        
+        <div className="cat-btn">
+          {catogeries.map((catogary)=>(  
+            <button className="btn-btn"
+             key={catogary.value}
+            onClick={ ()=>HandleClick(catogary.value)}>
+              {catogary.name}
+            </button>
+           ))}
+        </div>
     <div className="news-grid">
        {data?.articles?.map((Item,index) =>(
         <div key={index} className="News">

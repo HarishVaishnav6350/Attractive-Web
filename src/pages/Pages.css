@@ -218,3 +218,29 @@ right: 30px;
   height: 40%;
   border-radius: 10px;
 }
+.cat-btn{
+  display:table-cell;
+  justify-content: space-around;
+  background: none;
+  margin: 10px 20px;
+  border-radius: 10px;
+background: none;}
+.btn-btn{
+  font-weight: bold;
+  font-size: 18px;
+  background: none;
+  border-bottom: blue;
+  cursor: pointer;
+  color: #333;
+  box-sizing: border-box;
+
+}
+ 
+.btn-btn:hover{ 
+  background: none;
+  transform: scale(1.09);
+
+}
+ 
+ 
+ 
