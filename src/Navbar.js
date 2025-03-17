@@ -18,8 +18,8 @@ function Navbar() {
           </div>
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/profile"> Employes</Link></li>
+            <li><Link to="/contact">Profile</Link></li>
             <li><Link to="/form">Form</Link></li>
           </ul>
         </nav>
