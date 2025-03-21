@@ -36,7 +36,7 @@
   margin: 40px auto;
   padding: 20px;
   border-radius: 8px;
-  background-color: antiquewhite;
+  background-color: #96b159;
   border: 2px solid #eee;
 }
 
@@ -58,7 +58,9 @@ h1 {
 
 .form5 {
   font-size: 16px;
-  color: #555;
+  color: #0c0b0b;
+  font-weight: solid;
+  font-size: 19px;
   width: 150px;  
   margin-right: 20px; 
   font-weight: 500;
@@ -129,12 +131,7 @@ text-align: left;
   margin-bottom: 10px;
 }
 
-.no-profile {
-  font-size: 1.2em;
-  color: #888;
-  text-align: center;
-  margin-top: 20px;
-}
+ 
 .delete-btn {
  position: absolute;
  right: 8px;
@@ -219,27 +216,76 @@ right: 30px;
   border-radius: 10px;
 }
 .cat-btn{
+  all: unset;
   display:table-cell;
   justify-content: space-around;
   background: none;
   margin: 10px 20px;
-  border-radius: 10px;
 background: none;}
-.btn-btn{
+.btn-btn {
   font-weight: bold;
   font-size: 18px;
   background: none;
-  border-bottom: blue;
   cursor: pointer;
-  color: #333;
+  color: #0e0707;
   box-sizing: border-box;
-
+  border-radius: 0px !important;
+  margin-left: 10px;
 }
+
+.btn-btn:focus {
+  border-bottom: 2px solid blue;
+}
+
  
 .btn-btn:hover{ 
   background: none;
-  transform: scale(1.09);
+}
+ 
 
+.read-more-icon {
+  width: 50px;  
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.read-more-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.pagecont{
+  display: flex;
+  height: 100vh;
+}
+.imgsec{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgstyle{
+  max-width: 800px;
+  height: 100vh;
+}
+.formsec{
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: #0c0b0b;
+  background-color: #96b159;
+}
+.formin{
+  margin: 5px;
+  width: 100%;
+  padding: 10px;
 }
  
  

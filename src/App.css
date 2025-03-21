@@ -69,7 +69,9 @@ body {
 .nav-links li a:hover {
   color: yellow;
 }
-
+.nav-links li a:focus {
+color: yellow;
+}
 .page-container {
   padding: 50px;
 }

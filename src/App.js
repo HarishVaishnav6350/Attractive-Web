@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
 import Form1 from "./pages/Form1";
+import Login from "./pages/Login";
+
 
 
 
@@ -20,6 +22,9 @@ export default function App() {
           <Route path="profile" element={<Profile />} />
 
           <Route path="form" element={<Form1 />} />
+          <Route path="login" element={<Login />} />
+
+
         </Route>
       </Routes>
     </BrowserRouter>

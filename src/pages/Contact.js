@@ -1,6 +1,6 @@
  import React,{useState ,useEffect} from 'react'
  
- const Contact = () => {
+ const Profile = () => {
 const [name ,setName] = useState('');
 const [email ,setEmail] = useState('');
 const [phone ,setPhone] = useState('');
@@ -239,5 +239,5 @@ return (
    )
  }
  
- export default Contact
+ export default Profile;
  
